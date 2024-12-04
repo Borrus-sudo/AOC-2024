@@ -8,7 +8,7 @@ function quicksort(arr: number[]): number[] {
     const pivot = arr.length >> 1;
     const pivotVal = arr[pivot];
     const less: number[] = [], more: number[] = [], equal: number[] = [];
-
+       
     for (const elem of arr)
         if (elem < pivotVal)
             less.push(elem)
@@ -23,7 +23,7 @@ if (import.meta.main) {
 
     const text = await Deno.readTextFile("./input/day1.txt");
     const leftList: number[] = [], rightList: number[] = [];
-
+     
     text.split('\n').forEach(line => {
         const [left, right] = line.split("  ");
         leftList.push(+left);
