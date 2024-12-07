@@ -1,6 +1,6 @@
 {
   "tasks": {
-    "dev": "deno run --allow-read ./ts/day6.ts"
+    "dev": "deno run --allow-read ./ts/day7.ts"
   },
   "imports": {
     "@std/assert": "jsr:@std/assert@1"
