@@ -1,5 +1,9 @@
 if (import.meta.main) {
+
     const text = await Deno.readTextFile("./input/day8.txt");
+    console.time(
+        "Measure"
+    )
     const antennaPos: Map<string, [number, number][]> = new Map();
     const lines = text.split("\n").map(_ => _.trim())
     lines.forEach((_, row) => {
@@ -73,6 +77,6 @@ if (import.meta.main) {
             }
         }
     }
-
+    console.timeEnd("Measure")
     console.log({ ans1, ans2 })
 }
